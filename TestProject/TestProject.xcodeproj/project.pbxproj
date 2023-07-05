@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13900B042A5526E10052FEBD /* ListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13900B032A5526E10052FEBD /* ListModal.swift */; };
 		13CD40092A547A06002C1622 /* TestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD40082A547A06002C1622 /* TestProjectApp.swift */; };
 		13CD400B2A547A06002C1622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD400A2A547A06002C1622 /* ContentView.swift */; };
 		13CD400D2A547A06002C1622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CD400C2A547A06002C1622 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13900B032A5526E10052FEBD /* ListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModal.swift; sourceTree = "<group>"; };
 		13CD40052A547A06002C1622 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD40082A547A06002C1622 /* TestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectApp.swift; sourceTree = "<group>"; };
 		13CD400A2A547A06002C1622 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13900B062A55272F0052FEBD /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				13900B032A5526E10052FEBD /* ListModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		13900B072A55273B0052FEBD /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
 		13CD3FFC2A547A06002C1622 = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +117,13 @@
 		13CD40072A547A06002C1622 /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				13900B072A55273B0052FEBD /* ViewModal */,
 				13CD40082A547A06002C1622 /* TestProjectApp.swift */,
 				13CD400A2A547A06002C1622 /* ContentView.swift */,
 				13CD40342A547E93002C1622 /* Applications.swift */,
 				13CD40362A547E9E002C1622 /* Recents.swift */,
 				13CD40322A547CD7002C1622 /* Screen1.swift */,
+				13900B062A55272F0052FEBD /* Modal */,
 				13CD400C2A547A06002C1622 /* Assets.xcassets */,
 				13CD400E2A547A06002C1622 /* Preview Content */,
 			);
@@ -269,6 +288,7 @@
 				13CD40352A547E93002C1622 /* Applications.swift in Sources */,
 				13CD40332A547CD7002C1622 /* Screen1.swift in Sources */,
 				13CD400B2A547A06002C1622 /* ContentView.swift in Sources */,
+				13900B042A5526E10052FEBD /* ListModal.swift in Sources */,
 				13CD40092A547A06002C1622 /* TestProjectApp.swift in Sources */,
 				13CD40372A547E9E002C1622 /* Recents.swift in Sources */,
 			);

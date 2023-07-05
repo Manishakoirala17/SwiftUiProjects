@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct Screen1: View {
+    var lists:[ListModal] = ListModal.all()
     var body: some View {
         NavigationView{
             VStack {
                 List{
                     UserView()
-                    Listview()
+                    Listview(lists:lists)
                 }
                 .listStyle(.insetGrouped)
+                
                 Button("Signout"){
                     
                 }
                 .foregroundColor(.red)
-                .padding()
+                .padding(10)
+                Divider()
+
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
@@ -64,10 +68,12 @@ struct SectionView:View{
     }
 }
 struct Listview:View{
+    var lists:[ListModal]
+    
     var body: some View{
         Text("Default Workspace")
-        SectionView(section: "Accesblity", items: ["Offline Components","Siri Shortcuts"])
-        SectionView(section: "Preference", items: ["State Restoration","Security & Privacy"])
-        SectionView(section: "General", items: ["About","Feedback","Rate Us"])
+        ForEach(lists,id: \.self) { list in
+            SectionView(section: list.section, items: list.items)
+        }
     }
 }
